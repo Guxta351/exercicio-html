@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>os mal do programa</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        button {
+            margin-top: 50px;
+            padding: 10px;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1><u>programa de soma</u></h1>
+    <div style="text-align: center;" p><input id="n1" type="number"></p>
+        <h1>-</h1>
+        <p><input id="n2" type="number"></p>
+        <button id="botao">soma</button>
+        <p id="resultado"></p>
+        <script>
+            let botao = document.getElementById('botao')
+            botao.addEventListener('click', function () {
+                // console.log('clicaram')
+                let n1 = parseInt(document.getElementById('n1').value)
+                let n2 = parseInt(document.getElementById('n2').value)
+                let soma = n1 + n2
+                // alert ('clicaram')
+                document.getElementById('resultado').innerText = 'A soma é:' + soma
+            })
+        </script>
+</body>
+
+</html>
